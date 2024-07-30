@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/3
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Doe",
+    "email": "j@j.com",
+    "gender": "male"
+}
+
+###
+PATCH  http://localhost:5000/users/2
+Content-Type: application/json
+
+{
+    "name": "Abidin",
+    "email": "j@j.com",
+    "gender": "male"
+}
+
+###
+DELETE http://localhost:5000/users/2
